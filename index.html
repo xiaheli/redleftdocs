@@ -10,15 +10,22 @@
 </head>
 <body>
   <div id="app"></div>
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <script>
     window.$docsify = {
       name: 'Redleft 文档',
-      repo: '',
+      repo: 'xiaheli/redleftdocs',
       loadSidebar: true,
-      subMaxLevel: 2
+      subMaxLevel: 2,
+      plugins: [
+      EditOnGithubPlugin.create(
+    'https://github.com/xiaheli/redleftdocs/blob/main/'
+  )
+  ]
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
 </body>
 </html>
